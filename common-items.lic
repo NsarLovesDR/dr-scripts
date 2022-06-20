@@ -547,6 +547,11 @@ module DRCI
   def get_box_list_in_container(container)
     DRC.rummage('B', container)
   end
+  
+  def count_necro_stacker
+      count = DRC.bput("study my #{@necro_stacker}", /currently holds \d+ items/).scan(/\d+/).first.to_i
+      count
+  end
 
   def count_all_boxes(settings)
     current_box_count = 0
