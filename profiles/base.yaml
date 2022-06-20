@@ -281,6 +281,8 @@ thanatology:
   store: false
   harvest_container:
   harvest_count: 0
+  harvest_stacker:
+  harvest_stacker_count: 0
 # attempts to necromancer dissect after butchering a mob.  This often works.
 dissect_and_butcher: false
 # redeemed tag only allows dissect ritual
